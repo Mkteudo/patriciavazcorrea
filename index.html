@@ -2,6 +2,23 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+  analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted',
+  wait_for_update: 500
+});
+try { if (localStorage.getItem('pvc_cookies') === 'aceito') { gtag('consent', 'update', {analytics_storage: 'granted'}); } } catch (e) {}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WP5BPW5J');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Psicóloga e Psicanalista em Ribeirão Preto | Patrícia Vaz Corrêa</title>
 <meta name="description" content="Psicanálise para crianças, adolescentes e adultos em Ribeirão Preto. Consultório no Jardim Sumaré e atendimento online. +15 anos de clínica. CRP 06/108902.">
@@ -196,7 +213,7 @@
   .cta-final h2{font-size:clamp(32px,4.5vw,52px);color:var(--indigo);font-weight:300;max-width:720px;margin:0 auto;letter-spacing:-.01em}
   .cta-final p{font-size:18px;color:var(--muted);margin:20px auto 40px;max-width:480px;font-weight:300}
 
-  footer{background:var(--ink);color:var(--sand);padding:72px 0 40px}
+  footer{background:var(--indigo);color:var(--sand);padding:72px 0 40px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(239,231,218,.14)}
   .foot-grid .brandmark{color:#fff;margin-bottom:18px}
   .foot-grid p{font-size:14px;opacity:.7;font-weight:300;max-width:300px}
@@ -209,14 +226,31 @@
   .disclaimer{background:#fbf9f5;border:1px dashed rgba(190,106,74,.5);border-radius:14px;padding:16px 22px;font-size:13px;color:var(--muted);margin:0 auto;max-width:1140px}
 </style>
 <style>
-.wa-float{position:fixed;right:22px;bottom:22px;z-index:999;display:flex;align-items:center;gap:10px;height:58px;padding:0 22px 0 18px;border-radius:29px;background:#BE6A4A;color:#fff;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 8px 24px rgba(43,58,85,.28);transition:transform .2s,background .2s}
-.wa-float:hover{background:#A85A3D;transform:translateY(-2px)}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:999;display:flex;align-items:center;gap:10px;height:58px;padding:0 22px 0 18px;border-radius:29px;background:#25D366;color:#fff;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .2s,background .2s}
+.wa-float:hover{background:#1EBE5B;transform:translateY(-2px)}
 .wa-float svg{width:26px;height:26px;flex:none}
 @media(max-width:620px){.wa-float{right:16px;bottom:16px;width:56px;height:56px;padding:0;justify-content:center}.wa-float span{display:none}}
 @media print{.wa-float{display:none}}
 </style>
+<style>
+.cc{position:fixed;left:22px;bottom:22px;z-index:1000;max-width:420px;background:#fff;border:1px solid rgba(43,58,85,.12);border-radius:18px;padding:22px 24px;box-shadow:0 12px 36px rgba(43,58,85,.18);font-family:'Inter',sans-serif;color:#2B2622;display:none}
+.cc.show{display:block}
+.cc p{font-size:14px;line-height:1.55;margin:0 0 16px;color:rgba(43,38,34,.82)}
+.cc p a{color:#BE6A4A}
+.cc .cc-b{display:flex;gap:10px}
+.cc button{flex:1;font:500 14px 'Inter',sans-serif;padding:11px 14px;border-radius:40px;cursor:pointer;border:1.5px solid #2B3A55}
+.cc .cc-no{background:#fff;color:#2B3A55}
+.cc .cc-yes{background:#2B3A55;color:#fff}
+@media(max-width:620px){.cc{left:12px;right:12px;bottom:12px;max-width:none}body.cc-open .wa-float{bottom:var(--cc-h,190px)}}
+@media print{.cc{display:none}}
+</style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP5BPW5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
 
 <nav>
@@ -555,12 +589,39 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Patrícia Vaz Corrêa. Todos os direitos reservados.</span>
+      <span>© 2026 Patrícia Vaz Corrêa. Todos os direitos reservados. · <a href="privacidade.html" style="color:inherit">Política de privacidade</a> · <a href="#" data-cc-open style="color:inherit">Preferências de cookies</a></span>
       <span>Desenvolvido por <a href="https://www.mkteudocomunicacao.com.br" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Mkteúdo</a></span>
     </div>
   </div>
 </footer>
 
 <a href="https://wa.me/5511986849464?text=Ol%C3%A1%2C%20Patr%C3%ADcia%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento." class="wa-float" target="_blank" rel="noopener" aria-label="Conversar com a Patrícia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a>
+<div class="cc" id="cc" role="dialog" aria-live="polite" aria-label="Preferências de cookies">
+  <p>Usamos cookies de análise para entender como o site é visitado e melhorá-lo. Nenhum dado de saúde é coletado. <a href="privacidade.html">Política de privacidade</a></p>
+  <div class="cc-b"><button type="button" class="cc-no">Recusar</button><button type="button" class="cc-yes">Aceitar</button></div>
+</div>
+<script>
+(function(){
+  var KEY='pvc_cookies', box=document.getElementById('cc');
+  function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function set(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+  function open(){box.classList.add('show');document.body.classList.add('cc-open');
+    document.body.style.setProperty('--cc-h',(box.offsetHeight+24)+'px');}
+  function close(){box.classList.remove('show');document.body.classList.remove('cc-open');}
+  function choose(ok){set(ok?'aceito':'recusado');
+    gtag('consent','update',{analytics_storage:ok?'granted':'denied'});
+    dataLayer.push({event:'cookie_consent_update',cookie_consent:ok?'aceito':'recusado'});close();}
+  box.querySelector('.cc-yes').addEventListener('click',function(){choose(true);});
+  box.querySelector('.cc-no').addEventListener('click',function(){choose(false);});
+  document.addEventListener('click',function(e){
+    var o=e.target.closest('[data-cc-open]'); if(o){e.preventDefault();open();return;}
+    var a=e.target.closest('a[href*="wa.me"]');
+    if(a){dataLayer.push({event:'whatsapp_click',
+      link_location:a.classList.contains('wa-float')?'botao_flutuante':(a.closest('footer')?'rodape':(a.closest('nav')?'menu':'conteudo')),
+      link_text:(a.textContent||'').trim().slice(0,60)});}
+  });
+  if(!get()) open();
+})();
+</script>
 </body>
 </html>
