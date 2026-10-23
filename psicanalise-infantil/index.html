@@ -135,8 +135,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .prose em{color:var(--muted)}
   .pdf-box{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:720px;background:var(--sand-soft);border-radius:18px;padding:22px 26px;margin:0 0 40px}
   .pdf-box p{margin:0;font-size:15px;color:rgba(43,38,34,.8)}
+  .svc-photo{max-width:720px;margin:0 0 44px}
+  .svc-photo img{display:block;width:100%;height:auto;border-radius:22px}
+  .svc-photo.sq img{aspect-ratio:4/3;object-fit:cover;object-position:50% 30%}
+  .svc-photo figcaption{font-size:13px;color:var(--muted);margin-top:10px}
   .author{max-width:720px;display:flex;gap:20px;align-items:flex-start;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;margin:48px 0}
-  .author svg{flex:none;margin-top:4px}
+  .author .av{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 22%;display:block}
+  .author picture{flex:none}
   .author b{display:block;font-family:'Fraunces',serif;font-weight:400;font-size:20px;color:var(--indigo);margin-bottom:6px}
   .author p{font-size:15px;color:rgba(43,38,34,.78);margin:0}
   .author a{color:var(--terra);text-decoration:none}
@@ -229,6 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="art">
   <div class="wrap">
+    <figure class="svc-photo"><picture><source type="image/webp" srcset="/img/consultorio-infantil-ribeirao-preto-800.webp 800w, /img/consultorio-infantil-ribeirao-preto-1600.webp 1600w" sizes="(max-width:760px) 92vw, 720px"><img src="/img/consultorio-infantil-ribeirao-preto-800.jpg" srcset="/img/consultorio-infantil-ribeirao-preto-800.jpg 800w, /img/consultorio-infantil-ribeirao-preto-1600.jpg 1600w" sizes="(max-width:760px) 92vw, 720px" width="1600" height="1200" alt="Consultório infantil, o espaço do brincar onde a criança faz a terapia, com jogos, livros e materiais de desenho" fetchpriority="high"></picture><figcaption>O consultório infantil, espaço do brincar onde a criança faz a terapia</figcaption></figure>
     <article class="prose">
 <p>Atendo crianças e adolescentes em psicanálise no meu consultório em Ribeirão Preto, no Jardim Sumaré, com acompanhamento próximo dos pais. Sou psicóloga formada pela PUC-SP, com especialização em Psicanálise Infantil pelo Instituto Sedes Sapientiae, e mantenho consultório desde o início da carreira, há mais de 15 anos.</p>
 <h2>Quando procurar</h2>
@@ -273,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h3>Vocês conversam com a escola?</h3>
 <p>Quando faz sentido para o processo, sim, sempre com o conhecimento e o acordo da família.</p>
     </article>
-    <aside class="author"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12 30 C4 22 8 10 18 12 C26 13.5 26 22 20 23 C15 23.8 14 18 18 16 C23 13.5 30 18 30 26" stroke="#BE6A4A" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <aside class="author"><picture><source type="image/webp" srcset="/img/patricia-vaz-correa-psicologa-600.webp"><img class="av" src="/img/patricia-vaz-correa-psicologa-600.jpg" width="72" height="72" alt="Patrícia Vaz Corrêa" loading="lazy" decoding="async"></picture>
 <div><b>Patrícia Vaz Corrêa</b><p>Psicóloga e psicanalista (CRP 06/108902), formada pela PUC-SP, com especialização em Psicanálise Infantil pelo Instituto Sedes Sapientiae. Passou pelo Hospital das Clínicas da FMUSP e pelo Instituto de Reabilitação Lucy Montoro e atende há mais de 15 anos. Desde 2020, em Ribeirão Preto. <a href="/#sobre">Conheça a trajetória →</a></p></div></aside>
     <div class="cta-box">
       <h2>Vamos conversar?</h2>
