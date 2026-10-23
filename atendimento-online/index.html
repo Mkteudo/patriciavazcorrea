@@ -37,15 +37,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image" content="https://patriciavazcorrea.com.br/og/atendimento-online.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#2B3A55">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Psicanálise online para adultos, em português", "description": "Psicanálise online para adultos, em português, no Brasil e no exterior. Sessões por vídeo no seu fuso, com sigilo. Patrícia Vaz Corrêa, CRP 06/108902.", "url": "https://patriciavazcorrea.com.br/atendimento-online/", "provider": {"@id": "https://patriciavazcorrea.com.br/#consultorio"}, "serviceType": "Psicanálise", "areaServed": [{"@type": "Country", "name": "Brasil"}, {"@type": "Place", "name": "Brasileiros no exterior"}], "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://patriciavazcorrea.com.br/atendimento-online/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://patriciavazcorrea.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Psicanálise online para adultos, em português", "item": "https://patriciavazcorrea.com.br/atendimento-online/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Uma psicóloga do Brasil pode atender quem mora no exterior?", "acceptedAnswer": {"@type": "Answer", "text": "Pelas regras do CFP, sim: a Resolução nº 9/2024 regulamenta o atendimento online. A legislação do país onde você vive também pode ter regras próprias. No início do acompanhamento, conversamos também sobre a sua realidade local e sobre como acionar apoio presencial, se for necessário."}}, {"@type": "Question", "name": "Como funciona o horário com o fuso?", "acceptedAnswer": {"@type": "Answer", "text": "Combinamos um horário fixo que funcione para você, considerando o fuso do país onde você vive."}}, {"@type": "Question", "name": "Como é feito o pagamento do exterior?", "acceptedAnswer": {"@type": "Answer", "text": "Os valores e a forma de pagamento, inclusive a partir do exterior, são combinados na primeira conversa."}}, {"@type": "Question", "name": "A terapia online funciona como a presencial?", "acceptedAnswer": {"@type": "Answer", "text": "As pesquisas indicam resultados comparáveis. O que sustenta o processo é a escuta e o vínculo, e não o endereço."}}, {"@type": "Question", "name": "O que acontece se a conexão cair?", "acceptedAnswer": {"@type": "Answer", "text": "Tentamos reconectar pelo mesmo link. Se não for possível, falamos pelo WhatsApp para retomar."}}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,500;9..144,1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/fraunces.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:100 900;font-display:swap;src:url(/fonts/fraunces-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/inter.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
   :root{--indigo:#2B3A55;--terra:#BE6A4A;--sand:#EFE7DA;--ink:#2B2622;--olive:#7C8B6F;--white:#FFFFFF;--muted:#6b6b6b;--line:rgba(43,38,34,.10);--sand-soft:#F7F2EA;}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -107,7 +112,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(239,231,218,.14)}
   .foot-grid .brandmark{color:#fff;margin-bottom:18px}
   .foot-grid p{font-size:14px;opacity:.7;font-weight:300;max-width:300px}
-  .foot-col h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-bottom:16px;font-weight:600}
+  .foot-col .fh{display:block;font-size:14px;opacity:.75;margin-top:2px}
+  .foot-col .ft{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-bottom:16px;font-weight:600}
   .foot-col a{display:block;text-decoration:none;font-size:14.5px;opacity:.82;margin-bottom:10px;transition:opacity .2s}
   .foot-col a:hover{opacity:1;color:#E6B79F}
   .foot-bottom{padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;opacity:.55}
@@ -282,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="rel">
       <h2>Para ler antes da primeira conversa</h2>
-      <div class="cards"><a class="card" href="/textos/terapia-em-portugues-para-quem-vive-fora/"><span class="k">Quem vive fora</span><h3>Terapia em português para quem vive fora do Brasil</h3><p>Há coisas que só conseguimos dizer na língua em que aprendemos a sentir. Para quem mora longe, a análise online pode ser esse lugar.</p><span class="go">Ler →</span></a><a class="card" href="/textos/guia-analise-online/"><span class="k">Guia</span><h3>Um espaço de escuta, onde você estiver</h3><p>Como construir o seu próprio espaço para que a análise aconteça com profundidade, de qualquer lugar.</p><span class="go">Ler →</span></a><a class="card" href="/textos/luto-migratorio-e-choque-cultural/"><span class="k">Quem vive fora</span><h3>Morar fora e perder o chão: luto migratório e choque cultural</h3><p>Mudar de país é ganhar muita coisa. E também é perder outras, mesmo quando a mudança foi desejada.</p><span class="go">Ler →</span></a></div>
+      <div class="cards"><a class="card" href="/textos/terapia-em-portugues-para-quem-vive-fora/"><span class="k">Quem vive fora</span><h3>Terapia em português para quem vive fora do Brasil</h3><p>Há coisas que só conseguimos dizer na língua em que aprendemos a sentir. Para quem mora longe, a análise online pode ser esse lugar.</p><span class="go">Ler →</span></a><a class="card" href="/textos/guia-analise-online/"><span class="k">Guia</span><h3>Um espaço de escuta, onde você estiver</h3><p>Como construir o seu próprio espaço para que a análise aconteça com profundidade, de qualquer lugar.</p><span class="go">Ler →</span></a><a class="card" href="/textos/luto-migratorio-e-choque-cultural/"><span class="k">Quem vive fora</span><h3>Morar fora e perder o chão: luto migratório e choque cultural</h3><p>Mudar de país é ganhar muita coisa. E também é perder outras, mesmo quando a mudança foi desejada.</p><span class="go">Ler →</span></a><a class="card" href="/textos/o-que-e-psicanalise/"><span class="k">Psicanálise</span><h3>O que é psicanálise, explicado sem jargão</h3><p>Uma forma de cuidado que parte de uma ideia simples: aquilo que nos faz sofrer tem um sentido, e esse sentido pode ser escutado.</p><span class="go">Ler →</span></a><a class="card" href="/textos/psicanalise-ou-psicologia/"><span class="k">Psicanálise</span><h3>Psicanálise ou psicologia: qual a diferença?</h3><p>Psicologia é uma profissão. Psicanálise é uma forma de escutar e de tratar. Uma psicóloga pode ser psicanalista, mas as duas palavras não querem dizer a mesma coisa.</p><span class="go">Ler →</span></a><a class="card" href="/textos/guia-comecando-a-analise/"><span class="k">Guia</span><h3>O primeiro passo para dentro de si</h3><p>Um guia para entender como funciona a psicanálise e o que esperar do seu processo.</p><span class="go">Ler →</span></a></div>
     </div>
   </div>
 </section>
@@ -298,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Psicóloga e Psicanalista · CRP 06/108902. Psicanálise para crianças, adolescentes e adultos em Ribeirão Preto. Atendimento particular, com recibo para reembolso.</p>
       </div>
       <div class="foot-col">
-        <h4>Navegação</h4>
+        <p class="ft">Navegação</p>
         <a href="/#sobre">Sobre</a>
         <a href="/#atuacao">Atuação</a>
         <a href="/psicanalise-infantil/">Psicanálise infantil</a>
@@ -309,11 +315,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="/#faq">Dúvidas</a>
       </div>
       <div class="foot-col">
-        <h4>Contato</h4>
+        <p class="ft">Contato</p>
         <a href="https://wa.me/5511986849464?text=Ol%C3%A1%2C%20Patr%C3%ADcia%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento." target="_blank" rel="noopener">WhatsApp · (11) 98684-9464</a>
         <a href="https://instagram.com/patriciavazpsi">@patriciavazpsi</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Presidente%20Vargas%2C%202001%2C%20Edif%C3%ADcio%20New%20Century%2C%20Ribeir%C3%A3o%20Preto%20-%20SP" target="_blank" rel="noopener">Ed. New Century — Av. Pres. Vargas, 2001, sala 106</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Presidente%20Vargas%2C%202001%2C%20Edif%C3%ADcio%20New%20Century%2C%20Ribeir%C3%A3o%20Preto%20-%20SP" target="_blank" rel="noopener">Jardim Sumaré · Ribeirão Preto — SP</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3loga%20Patr%C3%ADcia%20Vaz%20Corr%C3%AAa%2C%20Av.%20Pres.%20Vargas%2C%202001%2C%20Ribeir%C3%A3o%20Preto%20-%20SP" target="_blank" rel="noopener">Ed. New Century — Av. Pres. Vargas, 2001, sala 106</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3loga%20Patr%C3%ADcia%20Vaz%20Corr%C3%AAa%2C%20Av.%20Pres.%20Vargas%2C%202001%2C%20Ribeir%C3%A3o%20Preto%20-%20SP" target="_blank" rel="noopener">Jardim América · Ribeirão Preto — SP · CEP 14020-260</a>
+        <span class="fh">Segunda a sexta, das 8h às 18h</span>
       </div>
     </div>
     <div class="foot-bottom">
