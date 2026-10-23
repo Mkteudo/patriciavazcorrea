@@ -61,6 +61,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media(max-width:1240px){nav ul{gap:22px}}
   @media(max-width:1100px){nav ul li.hidel{display:none}}
   @media(max-width:860px){nav ul li.hidem{display:none}}
+  .bt-short{display:none}
+  @media(max-width:620px){nav .wrap{height:64px;gap:12px}nav .brandmark{font-size:18px;white-space:nowrap;gap:8px}nav .brandmark svg{width:22px;height:22px}nav .btn{padding:9px 16px;font-size:13px;white-space:nowrap}.bt-full{display:none}.bt-short{display:inline}}
   .subhero{padding:70px 0 60px;border-bottom:1px solid var(--line)}
   .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:22px}
   .breadcrumb a{text-decoration:none;color:var(--terra)}
@@ -121,6 +123,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 @media(max-width:620px){.cc{left:12px;right:12px;bottom:12px;max-width:none}body.cc-open .wa-float{bottom:var(--cc-h,190px)}}
 @media print{.cc{display:none}}
 </style>
+<style>
+.mnav-btn{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;align-items:center;justify-content:center;border-radius:10px;margin-left:4px;color:#2B3A55}
+.mnav-btn svg{width:26px;height:26px}
+.mnav{position:fixed;left:0;right:0;top:64px;z-index:59;background:#fff;border-bottom:1px solid rgba(43,38,34,.10);box-shadow:0 18px 40px rgba(43,58,85,.12);padding:8px 22px 22px;display:none;max-height:calc(100vh - 64px);overflow-y:auto}
+.mnav.open{display:block}
+.mnav a{display:block;padding:14px 4px;font-family:'Inter',sans-serif;font-size:17px;color:#2B3A55;text-decoration:none;border-bottom:1px solid rgba(43,38,34,.08)}
+.mnav a[aria-current]{color:#BE6A4A}
+.mnav a.mnav-cta{margin-top:18px;border:0;border-radius:50px;background:#BE6A4A;color:#fff;text-align:center;font-weight:600;font-size:16px}
+@media(max-width:860px){.mnav-btn{display:inline-flex}}
+body.mnav-open .wa-float{display:none}
+@media(max-width:620px){nav ul li:last-child{display:none}}
+@media(min-width:861px){.mnav{display:none!important}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -138,9 +153,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul>
       <li class="hidem"><a href="index.html#sobre">Sobre</a></li>
       <li class="hidem"><a href="index.html#atuacao">Atuação</a></li>
+      <li class="hidem"><a href="/textos/">Textos</a></li>
       <li class="hidem"><a href="index.html#faq">Dúvidas</a></li>
       <li class="hidem"><a href="atendimento.html" aria-current="page" style="opacity:1;color:#BE6A4A">Atendimento particular</a></li>
-      <li><a href="index.html#contato" class="btn">Agende uma conversa</a></li>
+      <li><a href="index.html#contato" class="btn"><span class="bt-full">Agende uma conversa</span><span class="bt-short">Agendar</span></a></li>
     </ul>
   </div>
 </nav>
@@ -216,9 +232,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h4>Navegação</h4>
         <a href="index.html#sobre">Sobre</a>
         <a href="index.html#atuacao">Atuação</a>
-        <a href="index.html#online">Atendimento online</a>
+        <a href="/psicanalise-infantil/">Psicanálise infantil</a>
+        <a href="/atendimento-online/">Atendimento online</a>
         <a href="index.html#trajetoria">Trajetória</a>
         <a href="atendimento.html">Atendimento e reembolso</a>
+        <a href="/textos/">Textos</a>
         <a href="index.html#faq">Dúvidas</a>
       </div>
       <div class="foot-col">
@@ -237,8 +255,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <a href="https://wa.me/5511986849464?text=Ol%C3%A1%2C%20Patr%C3%ADcia%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20e%20o%20reembolso." class="wa-float" target="_blank" rel="noopener" aria-label="Conversar com a Patrícia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a>
+<script>
+(function(){
+  var nav=document.querySelector('nav'); if(!nav) return;
+  var wrap=nav.querySelector('.wrap'), ul=nav.querySelector('ul');
+  var btn=document.createElement('button'); btn.type='button'; btn.className='mnav-btn';
+  btn.setAttribute('aria-label','Abrir menu'); btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls','mnav');
+  var ICON_OPEN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+  var ICON_CLOSE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+  btn.innerHTML=ICON_OPEN; wrap.appendChild(btn);
+  var panel=document.createElement('div'); panel.id='mnav'; panel.className='mnav';
+  var seen={}, cta=null;
+  ul.querySelectorAll('a').forEach(function(a){
+    if(a.classList.contains('btn')){cta=a;return;}
+    var c=a.cloneNode(true); c.removeAttribute('style'); seen[a.getAttribute('href')]=1; panel.appendChild(c);
+  });
+  [['/psicanalise-infantil/','Psicanálise infantil'],['/atendimento-online/','Atendimento online']].forEach(function(x){
+    if(seen[x[0]]||location.pathname===x[0]) return;
+    var a=document.createElement('a'); a.href=x[0]; a.textContent=x[1]; panel.appendChild(a);
+  });
+  if(cta){var c=document.createElement('a'); c.href=cta.getAttribute('href'); c.className='mnav-cta'; c.textContent='Agende uma conversa'; panel.appendChild(c);}
+  document.body.appendChild(panel);
+  function set(open){panel.classList.toggle('open',open); document.body.classList.toggle('mnav-open',open); btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Fechar menu':'Abrir menu'); btn.innerHTML=open?ICON_CLOSE:ICON_OPEN;
+    panel.style.top=nav.getBoundingClientRect().bottom+'px';}
+  btn.addEventListener('click',function(){set(!panel.classList.contains('open'));});
+  panel.addEventListener('click',function(e){if(e.target.closest('a')) set(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') set(false);});
+})();
+</script>
 <div class="cc" id="cc" role="dialog" aria-live="polite" aria-label="Preferências de cookies">
-  <p>Usamos cookies de análise para entender como o site é visitado e melhorá-lo. Nenhum dado de saúde é coletado. <a href="privacidade.html">Política de privacidade</a></p>
+  <p>Usamos cookies de análise para entender como o site é visitado e melhorá-lo. Nenhum dado de saúde é coletado. <a href="/privacidade.html">Política de privacidade</a></p>
   <div class="cc-b"><button type="button" class="cc-no">Recusar</button><button type="button" class="cc-yes">Aceitar</button></div>
 </div>
 <script>
